@@ -6,8 +6,9 @@ public class InputManager : MonoBehaviour
     public static InputManager Instance => instance;
 
     public bool isKeySpace { get; private set; }
-    public bool isMouseLeftClick { get; private set; }
-    public bool isMouseRightClick { get; private set; }
+    public bool isButtonLeftClick { get; private set; }
+    public bool isButtonRightClick { get; private set; }
+    public bool isKeyLeftClick { get; private set; }
 
     private void Awake()
     {
@@ -32,7 +33,8 @@ public class InputManager : MonoBehaviour
 
     private void ApplyMouseClick()
     {
-        this.isMouseLeftClick = Input.GetButtonDown(InputTags.FIRE_1);
-        this.isMouseRightClick = Input.GetButtonDown(InputTags.FIRE_2);
+        this.isButtonLeftClick = Input.GetButtonDown(InputTags.FIRE_1);
+        this.isButtonRightClick = Input.GetButtonDown(InputTags.FIRE_2);
+        this.isKeyLeftClick = Input.GetKeyDown(KeyCode.Mouse0);
     }
 }

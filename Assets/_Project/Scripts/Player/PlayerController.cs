@@ -1,16 +1,19 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : CustomMonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Transform playerBody;
+
+    public Animator animator { get; private set; }
+
+    protected override void LoadComponents()
     {
-        
+        this.MappingComponent();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void MappingComponent()
     {
-        
+        if (animator != null) return;
+        animator = GetComponentInChildren<Animator>();
     }
 }
