@@ -17,4 +17,5 @@ public class GameObjectTags
 {
     public const string START_POINT = "StartPoint";
     public const string END_POINT = "EndPoint";
+    public const string MAIN_CAMERA = "Main Camera";
 }

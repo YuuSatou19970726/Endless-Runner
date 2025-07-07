@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4104660916476647187}
   m_Layer: 0
-  m_Name: LevelPart
+  m_Name: LevelPart_Tea_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,7 +113,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.12603617, g: 0, b: 1, a: 1}
+  m_Color: {r: 0.827451, g: 0.8745098, b: 0.72156864, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
